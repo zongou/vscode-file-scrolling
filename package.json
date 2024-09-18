@@ -1,0 +1,42 @@
+{
+	"name": "file-auto-scrolling",
+	"displayName": "File Auto Scrolling",
+	"description": "Toggle file auto scrolling",
+	"version": "0.0.10",
+	"publisher": "zongou",
+	"repository": "https://github.com/zongou/vscode-file-auto-scrolling",
+	"engines": {
+		"vscode": "^1.75.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"icon": "resources/icon.png",
+	"activationEvents": [],
+	"main": "./out/extension.js",
+	"browser": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"enablement": "isFileSystemResource",
+				"command": "file-auto-scrolling.toggle",
+				"title": "%command.fileAutoScrolling.toggle.title%",
+				"category": "%command.category%"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"lint": "eslint \"src/**/*.ts\"",
+		"watch": "tsc -watch -p ./"
+	},
+	"devDependencies": {
+		"@types/node": "^18",
+		"@types/vscode": "^1.75.0",
+		"@typescript-eslint/eslint-plugin": "^7.14.0",
+		"@typescript-eslint/parser": "^7.14.0",
+		"eslint": "^8.26.0",
+		"typescript": "^5.5.2"
+	}
+}
