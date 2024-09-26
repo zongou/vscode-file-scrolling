@@ -2,7 +2,7 @@
 	"name": "file-auto-scrolling",
 	"displayName": "File Auto Scrolling",
 	"description": "Toggle file auto scrolling",
-	"version": "0.0.10",
+	"version": "0.0.11",
 	"publisher": "zongou",
 	"repository": "https://github.com/zongou/vscode-file-auto-scrolling",
 	"engines": {
